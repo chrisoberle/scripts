@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# karma.sh
+# 
+# This script launches Karma from your working directory
+#
+node_modules/karma/bin/karma $*
