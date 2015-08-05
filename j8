@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+export JAVA_HOME='C:\jdk1.8.0_45'
+
+
+
+

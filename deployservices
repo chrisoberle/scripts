@@ -1,0 +1,19 @@
+#!/usr/bin/bash
+
+export JAVA_HOME='C:\jdk1.8.0_45'
+export JBOSS_HOME='C:\jboss-eap-6.4-1'
+#cd /c/jboss-eap-6.4-1/bin
+
+read -sp ' Enter password for admin: ' passvar
+echo
+
+for x in $(cat servicenodes.txt)
+do
+    #echo $x
+    echo "deploying services using $x"
+    (/c/jboss-eap-6.4-1/bin/jboss-cli.sh -c controller=$x command="deploy evaas-batchprint-ear.ear") &
+    (/c/jboss-eap-6.4-1/bin/jboss-cli.sh -c controller=$x command="deploy evaas-dataexport-ear.ear") &
+    (/c/jboss-eap-6.4-1/bin/jboss-cli.sh -c controller=$x command="deploy evaas-mail-ear.ear") &
+done 
+
+wait

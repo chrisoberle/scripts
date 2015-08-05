@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+export JAVA_HOME='C:\jdk1.8.0_45'
+export JBOSS_HOME='C:\jboss-eap-6.4-2'
+cd /c/jboss-eap-6.4-2/bin
+
+
+

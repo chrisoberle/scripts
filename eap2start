@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+standalone.bat --server-config=standalone-full-ha.xml -b d76402 -Djboss.node.name=nodeTwo -Djboss.mod_cluster.jvmRoute=nodeTwo -Djboss.socket.binding.port-offset=100 -Djboss.bind.address.management=d76402
+
+

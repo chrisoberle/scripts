@@ -1,0 +1,19 @@
+#!/usr/bin/bash
+
+export JAVA_HOME='C:\jdk1.8.0_45'
+export JBOSS_HOME='C:\jboss-eap-6.4-1'
+#cd /c/jboss-eap-6.4-1/bin
+
+read -sp ' Enter password for admin: ' passvar
+echo
+
+
+for x in $(cat webnodes.txt)
+do
+    #echo $x
+    echo "undeploying web using $x"
+    (/c/jboss-eap-6.4-1/bin/jboss-cli.sh -c controller=$x command="undeploy web.war") &
+done 
+
+wait
+

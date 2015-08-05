@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+standalone.bat --server-config=standalone-full-ha.xml -b d76402 -Djboss.node.name=nodeOne -Djboss.mod_cluster.jvmRoute=nodeOne -Djboss.bind.address.management=d76402
+
+

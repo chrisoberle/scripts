@@ -1,0 +1,43 @@
+#!/usr/bin/bash
+
+export JAVA_HOME='C:\jdk1.8.0_45'
+export JBOSS_HOME='C:\jboss-eap-6.4-1'
+cd /c/jboss-eap-6.4-1/standalone
+rm -rf work/*
+rm -rf tmp/*
+rm -rf log/*
+rm -rf data/messagingbindings
+rm -rf data/messagingjournal
+rm -rf data/messaginglargemessages
+rm -rf data/timer-service-data
+rm -rf data/tx-object-store
+
+cd /c/jboss-eap-6.4-2/standalone
+rm -rf work/*
+rm -rf tmp/*
+rm -rf log/*
+rm -rf data/messagingbindings
+rm -rf data/messagingjournal
+rm -rf data/messaginglargemessages
+rm -rf data/timer-service-data
+rm -rf data/tx-object-store
+
+cd /c/jboss-eap-6.4-3/standalone
+rm -rf work/*
+rm -rf tmp/*
+rm -rf log/*
+rm -rf data/messagingbindings
+rm -rf data/messagingjournal
+rm -rf data/messaginglargemessages
+rm -rf data/timer-service-data
+rm -rf data/tx-object-store
+
+cd /c/jboss-eap-6.4-4/standalone
+rm -rf work/*
+rm -rf tmp/*
+rm -rf log/*
+rm -rf data/messagingbindings
+rm -rf data/messagingjournal
+rm -rf data/messaginglargemessages
+rm -rf data/timer-service-data
+rm -rf data/tx-object-store
